@@ -1,3 +1,0 @@
-STAGE.
-WAIT 1.1.
-STAGE.
