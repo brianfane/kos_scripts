@@ -1,5 +1,5 @@
 STAGE.
-WAIT 1.2.
+WAIT 2.3.
 STAGE.
 UNTIL 1 > 2 {
 SET t TO FACING:topvector.
