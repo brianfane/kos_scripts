@@ -13,11 +13,11 @@ LOCK met TO TIME:SECONDS - ms.
 WAIT 3.0.
 STAGE.
 WAIT 2.0.
-LOCK tP TO 90 - ((90 - 55) * (met - 5) / (70 - 5)).
+LOCK tP TO 90 - ((90 - 45) * (met - 5) / (70 - 5)).
 LOCK STEERING TO HEADING(90, tP).
-UNTIL tP <= 55 {
+UNTIL tP <= 45 {
  PRINT "Pitch: " + ROUND(cP, 2).
  WAIT 2.
 }
-LOCK STEERING TO HEADING(90, 55).
+LOCK STEERING TO HEADING(90, 45).
 WAIT 30.
