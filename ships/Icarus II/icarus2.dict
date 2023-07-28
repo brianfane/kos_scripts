@@ -1,8 +1,0 @@
-f               (vector) Forward direction of ship.
-rR              (direction) Ship roll, from right.
-rt              (vector) Right, from ship.
-t               (vector) Top, from ship.
-cP              (integer) Current pitch.
-ms              (integer) Mission start time.
-met             (integer) Mission Elapsed Time.
-tP              (integer) Target Pitch.
