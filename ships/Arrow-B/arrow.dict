@@ -1,0 +1,5 @@
+b2              (part) Booster 2
+d1              (part) Decoupler 1
+d2              (part) Decoupler 2
+s               (part) Sustainer engine
+w               (integer) Wait time after booster 2 ignition to sustainer ignition
