@@ -1,15 +1,23 @@
-RUNPATH("0:/arrow_init.ks").
+RUNPATH("0:/arrow_b_2_init.ks").
 LOCK THROTTLE TO 1.
 
 PRINT("Launch").
 STAGE.
-WAIT 1.2.
+WAIT 1.1.
 PRINT("Drop B1/Light B2").
 d1:GETMODULE("ModuleDecouple"):DOEVENT("decouple").
-b2:GETMODULE("ModuleEnginesRF"):DOEVENT("activate engine").
+print(b2).
+FOR b IN b2 {
+  b:GETMODULE("ModuleEnginesRF"):DOEVENT("activate engine").
+}
 WAIT w.
 PRINT("Light sustainer").
 s:GETMODULE("ModuleEnginesRF"):DOEVENT("activate engine").
-WAIT 1.28 - w. 
+WAIT 1.20 - w. 
 d2:GETMODULE("ModuleDecouple"):DOEVENT("decouple").
 WAIT 90.
+STAGE.
+WAIT 1.
+STAGE.
+WAIT 1.
+STAGE.

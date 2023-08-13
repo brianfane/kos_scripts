@@ -1,0 +1,19 @@
+RUNPATH("0:/icarus_init.ks").
+
+STAGE.
+SET ms TO TIME:SECONDS.
+LOCK met TO TIME:SECONDS - ms.
+
+WAIT 3.0.
+STAGE.
+WAIT 2.0.
+LOCK tP TO 90 - ((90 - eP) * (met - 5) / (70 - 5)).
+LOCK STEERING TO HEADING(90, tP).
+UNTIL tP <= eP {
+ WAIT 2.
+}
+LOCK STEERING TO HEADING(90, eP).
+WAIT 50.
+STAGE.
+WAIT 55.
+STAGE.
